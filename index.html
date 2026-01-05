@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSUSSC Recruitment | North South University Social Services Club</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --nsu-blue: #003366;
+            --nsu-orange: #f0ad4e;
+            --light-bg: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-bg);
+            color: #333;
+        }
+
+        /* Hero Banner Section */
+        .hero-banner {
+            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('https://scontent.fdac207-1.fna.fbcdn.net/v/t39.30808-6/488416584_1105817298236407_9004243297533648273_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeHW0kcFwLADpmgo5PWbpbdizsiCpvZQWgzOyIKm9lBaDBoBI_kBakwnWmlgK3A6jgEWhkPTSJE4xQv-JWlPz5xN&_nc_ohc=C1Dtyyt3fWwQ7kNvwEStLNe&_nc_oc=AdlrYH0zWnnFb9KuSV8Waixg8iXxfN5Ut5bEsT8sj92wN6MX2JUNtuxYNwHq3iApu4g&_nc_zt=23&_nc_ht=scontent.fdac207-1.fna&_nc_gid=CCs40cZtUMmtBxUgeVap_w&oh=00_AfqHbTGaBz69bWXcUb58aCPR9luEI0Y-8jFT2I49T6iM2w&oe=69612782');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-banner h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-banner p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        /* Section Styling */
+        .section-title {
+            color: var(--nsu-blue);
+            margin-bottom: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 3px solid var(--nsu-orange);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        /* Event Cards */
+        .event-card {
+            transition: transform 0.3s;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            height: 100%;
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .event-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* Form Styling */
+        .form-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--nsu-blue);
+        }
+
+        .form-label {
+            font-weight: 600;
+            color: var(--nsu-blue);
+            margin-top: 15px;
+        }
+
+        .question-block {
+            background-color: #f1f5f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--nsu-orange);
+        }
+
+        .btn-submit {
+            background-color: var(--nsu-blue);
+            color: white;
+            padding: 12px 40px;
+            font-size: 1.2rem;
+            border: none;
+            transition: background 0.3s;
+        }
+
+        .btn-submit:hover {
+            background-color: #002244;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: var(--nsu-blue);">
+        <div class="container">
+            <a class="navbar-brand" href="#">NSU Social Services Club</a>
+        </div>
+    </nav>
+
+    <header class="hero-banner">
+        <div class="container">
+            <h1>Create Impact. Serve Humanity.</h1>
+            <p>Join the Fall Recruitment 2026</p>
+            <a href="#recruitment-form" class="btn btn-warning btn-lg mt-3 text-white fw-bold">Apply Now</a>
+        </div>
+    </header>
+
+    <section class="container py-5">
+        <div class="text-center">
+            <h2 class="section-title">Club Overview</h2>
+            <p class="lead text-muted">
+                The North South University Social Services Club (NSUSSC) is one of the premier student organizations at NSU. Dedicated to the betterment of society, we organize large-scale charitable events, relief efforts, and cultural programs. Joining NSUSSC is not just about club activities; it's about building character, leadership, and making a tangible difference in the lives of the underprivileged.
+            </p>
+        </div>
+    </section>
+
+    <section class="container py-4 bg-light">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Our Signature Events</h2>
+            <p>A glimpse into the impact we create throughout the year.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card event-card">
+                    <img src="https://scontent.fdac207-1.fna.fbcdn.net/v/t39.30808-6/571441603_1281907113960757_3022679032296623100_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEcoId_udhxsWAtNn61TAAURLNTM6wRPC1Es1MzrBE8LQbJ2rC7zIM8rVT39-zrRbkBgi6FAMHYYwYtP0W5mqTv&_nc_ohc=7vy687nFilEQ7kNvwGJKxQw&_nc_oc=AdlzHDYdw0J-x_Z6HlD35PpxHSCLggnUhojXl_9lhOQTnKP4ZwNiuouHHgo1jxJ_7h8&_nc_zt=23&_nc_ht=scontent.fdac207-1.fna&_nc_gid=QuI9qywKxVfNH9gGIuOO1A&oh=00_AfpvwfTzEcWg0b6BkvEOKK5PgHMFNbwosTQFfOHjtvk85g&oe=696132FA" class="card-img-top" alt="Socio Camp">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Socio Camp</h5>
+                        <p class="card-text">An inter-university idea generating competition to solve social problems.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card event-card">
+                    <img src="https://nsussc.com/wp-content/uploads/2024/09/6-960x480.jpeg" class="card-img-top" alt="Flood Relief">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Flood Relief</h5>
+                        <p class="card-text">Providing emergency aid, food, and medicine to flood-affected areas across Bangladesh.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card event-card">
+                    <img src="https://scontent.fdac207-1.fna.fbcdn.net/v/t39.30808-6/487859499_1105115894973214_6607007584920640372_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHBPGZ49Aya5LWYZIBR5gwMG2Db_xVyE0QbYNv_FXITRN50SQUwhb-YJCetu2dWxgms6GreXvBhxdM1uu76ndea&_nc_ohc=tlAhQgmjtaAQ7kNvwFjUoJV&_nc_oc=AdnQ6S2-3a20rIbOD5VTghSL8kmEpMdMkyCZWnjW17dyVn-z1iu_3G-wFC-SW0GG3GM&_nc_zt=23&_nc_ht=scontent.fdac207-1.fna&_nc_gid=Z7WTsqzFEtBZ1S0goMTtkw&oh=00_Afr1l8FRZFhL659Bm6uy3w3Gt3iLA7iMRCDIOS1YmQOAPw&oe=69611A13" class="card-img-top" alt="Winter Clothing Drive">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Winter Clothing Drive</h5>
+                        <p class="card-text">Collecting and distributing warm clothes to the homeless during harsh winters.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card event-card">
+                    <img src="https://scontent.fdac207-1.fna.fbcdn.net/v/t39.30808-6/486795523_1101725945312209_2061149754048323204_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEnCjkyBULz_nUQaw0yWYhOhQBMuUtFTkWFAEy5S0VORe13SBZLZDrR5ii8cZbSiCUENrCclg9k3eQvrkSr9zm3&_nc_ohc=i2OHronBPLwQ7kNvwGHCZre&_nc_oc=Adl86gqAbq5l_riM2yF_vXM4XWYWWBS7PGCi7L8GArhiyPkD0gvOutsQ1ISOSIyMFVs&_nc_zt=23&_nc_ht=scontent.fdac207-1.fna&_nc_gid=D9Fz8cm1mM-A3SFMLnH-Yw&oh=00_AfpGfSyHZR4BjgZ3XmK5IkSznl8WrKIDRda6TYG6BUftJw&oe=6961325B" class="card-img-top" alt="Onushongo">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Onushongo</h5>
+                        <p class="card-text">A dedicated program for underprivileged children to enjoy a day of fun and learning.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card event-card">
+                    <img src="https://scontent.fdac207-1.fna.fbcdn.net/v/t39.30808-6/489028871_1109538537864283_8967581843086613261_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeF6_fp8oSmhcOKxJUVO1vCkGts5j4V4x7Ma2zmPhXjHs6tHQjYJb12hOgAmgLkpa02MKJ_LtITvnWA_xRRvSDAC&_nc_ohc=k-ElRa1ZdegQ7kNvwEnvXo1&_nc_oc=Adldko2kodLAHn6GWNuAGWyPiLHC-lC9Udhv_9Jg2_0cM3g3uspCAzyANKbJe2LZeZo&_nc_zt=23&_nc_ht=scontent.fdac207-1.fna&_nc_gid=Pwfu1yPKajVdf7lt5z9AKA&oh=00_AfrgfVSPXxkItf2_85xapt8kGPdWPnuMua1cbJlONcIq3w&oe=6961193D" class="card-img-top" alt="Pitha Uthsob">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Pitha Uthsob</h5>
+                        <p class="card-text">Celebrating Bengali culture with traditional cakes and cultural performances.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card event-card">
+                    <img src="https://scontent.fdac207-1.fna.fbcdn.net/v/t39.30808-6/487789242_1102405688577568_1216824851010499073_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeF5tMdCbY1lpTEIf81m8NqfOPxyzxdE06Q4_HLPF0TTpIJy8xHJlhAnKGXY6YQr6SfgETMTMTuOSJY16XNhRJrF&_nc_ohc=vdm1aCjBIIYQ7kNvwHj9R9q&_nc_oc=AdmNU6F3KwjFEW52PNSIcLnYDS93gR3dlcPJ-Au-U3wcZwZPVuNwfa8an8uA8QrsFTQ&_nc_zt=23&_nc_ht=scontent.fdac207-1.fna&_nc_gid=vml9ruJSHmsdwAFZMrFDNg&oh=00_AfrkrieUoBeknRIl0c7kRPNxznYecM53meBixK0I5FOOaQ&oe=69610FF5" class="card-img-top" alt="Blood Donation">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Blood Donation Drive</h5>
+                        <p class="card-text">Regular drives to collect blood for critical patients and raise awareness.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card event-card">
+                    <img src="https://scontent.fdac207-1.fna.fbcdn.net/v/t39.30808-6/515768936_1180795804071889_3175947781415538704_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHFabAKmAsyBxOio_vGCDyLBD3O_tWA5kIEPc7-1YDmQu7ubWF8Vymw1BpKUxSUbL91GpAHipC9FNYOMpwhqkn8&_nc_ohc=-WHPjO3ENOkQ7kNvwEWsDtt&_nc_oc=AdmJhJYZ3kbxmZ9TBVpne5AJW83cmb_AFe6i7aFtb5aIv6hwAIUXUFf86sgZ8uueZH0&_nc_zt=23&_nc_ht=scontent.fdac207-1.fna&_nc_gid=1yATYcs9jm2meLo8l2I0dQ&oh=00_Afpu1TQTTKnej2jjwnb4hfN8pXzwy45TPwXbkT2T2_E19g&oe=6961254D" class="card-img-top" alt="Amar Pathshala">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Amar Pathshala</h5>
+                        <p class="card-text">An educational initiative providing free schooling materials to needy students.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card event-card">
+                    <img src="https://scontent.fdac207-1.fna.fbcdn.net/v/t39.30808-6/493401908_1124686663016137_2286792474598415248_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHvYPr1SW2glcoeBpeZFACHM2yEl3GmuCMzbISXcaa4Iyx3JFRIqEB2mrPopXAcaUHXVGpjIJ9ZBdfxiiUI3euD&_nc_ohc=MUFmqX68vLIQ7kNvwFdehZR&_nc_oc=AdnG4fmW_JOyOSLbddzZXi_04AB_eLe9UOk7V6HVjhUG0bHxBUhRdtAE3anQ1VL5viA&_nc_zt=23&_nc_ht=scontent.fdac207-1.fna&_nc_gid=yPoakw48wXb9-SSDkwitkg&oh=00_AfpyCujAp0L0u25SzKx4L3KmGs79JQcrJS2HVfMaFScqsg&oe=69612C04" class="card-img-top" alt="Iftar Distribution & Eid Clothing">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Iftar Distribution & Eid Clothing</h5>
+                        <p class="card-text">This event typically holds in an orphanage with the participation of club members.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card event-card">
+                    <img src="https://scontent.fdac207-1.fna.fbcdn.net/v/t39.30808-6/495267754_1131725152312288_4535382267196674419_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGnL2hUOgprJJGwrE8LkTn4Euoj_nvzOSgS6iP-e_M5KG0sVCSTsW5EiJYvhVJ92OkxIkRjH2_MfqrQ6JnYGQb4&_nc_ohc=iNrLvPX6DY8Q7kNvwEZFZnv&_nc_oc=AdlrktFJ38cZgJ8v1VxD3y2ruEAh6GnaZHI_6fgMO_t6-bAaMqgurL0BcELRtbadZ3c&_nc_zt=23&_nc_ht=scontent.fdac207-1.fna&_nc_gid=3VpSKqJ-dnlnP8Tl3Bbp0A&oh=00_AfqZ0MfAASz1KuP-qQBG7xUUOM3n1aY5RS8PKYyACv9eGQ&oe=69613754" class="card-img-top" alt="Boishakhi Mela">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Boishakhi Mela</h5>
+                        <p class="card-text">A vibrant celebration of the Bengali New Year promoting our heritage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="recruitment-form" class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="form-container">
+                    <div class="text-center mb-4">
+                        <h2 class="fw-bold" style="color: var(--nsu-blue);">Member Recruitment Form</h2>
+                        <p class="text-muted">Please fill out the form honestly. All fields are mandatory.</p>
+                    </div>
+
+                    <form name="submit-to-google-sheet">
+                        
+                        <h4 class="mb-3 border-bottom pb-2">Personal Information</h4>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="nsuid" class="form-label">NSU ID</label>
+                                <input type="number" class="form-control" id="nsuid" placeholder="e.g. 211xxxxxxx" required>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="semester" class="form-label">No. of Enrolled Semester</label>
+                                <input type="number" class="form-control" id="semester" required>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <label class="form-label">Gender</label>
+                                <div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gender" id="male" value="Male" required>
+                                        <label class="form-check-label" for="male">Male</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+                                        <label class="form-check-label" for="female">Female</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="dob" class="form-label">Date of Birth</label>
+                                <input type="date" class="form-control" id="dob" required>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="bloodgroup" class="form-label">Blood Group</label>
+                                <select class="form-select" id="bloodgroup" required>
+                                    <option value="" selected disabled>Choose...</option>
+                                    <option value="A+">A+</option>
+                                    <option value="A-">A-</option>
+                                    <option value="B+">B+</option>
+                                    <option value="B-">B-</option>
+                                    <option value="O+">O+</option>
+                                    <option value="O-">O-</option>
+                                    <option value="AB+">AB+</option>
+                                    <option value="AB-">AB-</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="credits" class="form-label">Credits Completed</label>
+                                <input type="number" class="form-control" id="credits" required>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="cgpa" class="form-label">CGPA</label>
+                                <input type="number" step="0.01" class="form-control" id="cgpa" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Contact Number</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="address" class="form-label">Address</label>
+                                <textarea class="form-control" id="address" rows="2" required></textarea>
+                            </div>
+                        </div>
+
+                        <h4 class="mt-5 mb-3 border-bottom pb-2">Questionnaire</h4>
+                        
+                        <div class="question-block">
+                            <label class="form-label">1. Why do you want to join NSUSSC?</label>
+                            <textarea class="form-control" rows="3" required></textarea>
+                        </div>
+
+                        <div class="question-block">
+                            <label class="form-label">2. Are you currently involved with any other club or have been in the past? If yes, please specify.</label>
+                            <textarea class="form-control" rows="2"></textarea>
+                        </div>
+
+                        <div class="question-block">
+                            <label class="form-label">3. Have you ever participated in any kind of social activity before? If yes, please specify.</label>
+                            <textarea class="form-control" rows="2"></textarea>
+                        </div>
+
+                        <div class="question-block">
+                            <label class="form-label mb-3">4. Do you have any skills/experience in any of the following fields?</label>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="skill1">
+                                        <label class="form-check-label" for="skill1">Crafting/Photography/Painting</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="skill2">
+                                        <label class="form-check-label" for="skill2">Graphics Design/Video Editing</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="skill3">
+                                        <label class="form-check-label" for="skill3">Public Speaking/Recitation</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="skill4">
+                                        <label class="form-check-label" for="skill4">Sales/Promotions</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="skill5">
+                                        <label class="form-check-label" for="skill5">Writing</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="skill6">
+                                        <label class="form-check-label" for="skill6">Organizing</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="skill7">
+                                        <label class="form-check-label" for="skill7">Others</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2">
+                                <label class="form-label" style="font-size: 0.9em;">Please Specify details (Link to portfolio if applicable):</label>
+                                <textarea class="form-control" rows="2"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="question-block">
+                            <label class="form-label">5. Are you a Leader or a Follower? Explain.</label>
+                            <textarea class="form-control" rows="3" required></textarea>
+                        </div>
+
+                        <div class="question-block">
+                            <label class="form-label">6. Write a quality of you which might make you a leader in future?</label>
+                            <textarea class="form-control" rows="2" required></textarea>
+                        </div>
+
+                        <div class="question-block">
+                            <label class="form-label">7. What is your best way to make someone happy?</label>
+                            <textarea class="form-control" rows="2" required></textarea>
+                        </div>
+
+                        <div class="question-block">
+                            <label class="form-label">8. Did you understand the theme that has been showcased in this recruitment? Explain.</label>
+                            <textarea class="form-control" rows="3" required></textarea>
+                        </div>
+
+                        <div class="question-block">
+                            <label class="form-label">9. How do you define a good person?</label>
+                            <textarea class="form-control" rows="3" required></textarea>
+                        </div>
+
+                        <div class="question-block">
+                            <label class="form-label">10. Suppose you are sitting in front of two criminals, one is a murderer. You have been given the power to save any of them from retribution, whom will you save & why? Explain.</label>
+                            <textarea class="form-control" rows="4" required></textarea>
+                        </div>
+
+                        <div class="question-block">
+                            <label class="form-label">11. Express yourself?</label>
+                            <textarea class="form-control" rows="4" placeholder="Tell us something about yourself not mentioned above..." required></textarea>
+                        </div>
+
+                        <div class="alert alert-warning mt-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="declaration" required>
+                                <label class="form-check-label fw-bold" for="declaration">
+                                    ** I attest the accuracy of all information stated in the form. If I get selected, I will abide by all the rules and regulations of NSUSSC.
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-submit rounded-pill">Submit Application</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 North South University Social Services Club. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz0P94rE18f75Wq8CTUbTDi1St00S_v2fM3GNOYn23FdAX8RoPaEmrK2_b2UuNDjhEhSw/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const submitButton = document.querySelector('.submit-btn');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            
+            // Change button text to indicate processing
+            
+            submitButton.innerText = "Submitting...";
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                alert("Application Submitted Successfully! Please check your email for confirmation.");
+                submitButton.innerText = "Submitted";
+                form.reset(); // Clear the form
+                submitButton.disabled = false;
+                submitButton.innerText = "Submit Application";
+            })
+            .catch(error => {
+                alert("Error! Please try again.");
+                console.error('Error!', error.message);
+                submitButton.disabled = false;
+                submitButton.innerText = "Submit Application";
+            });
+        });
+    </script>
+</body>
+</body>
+</html>
